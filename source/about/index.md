@@ -53,7 +53,6 @@ fancybox: false
 
 <img src="/images/about.gif" title="shit">
 
-
 <div class="player">
 <iframe scrolling="auto" frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=330 src="http://music.163.com/outchain/player?type=0&id=468947116&auto=0&height=430"></iframe>
 </div>
