@@ -7,9 +7,7 @@ title: Hello World
 <!-- more -->
 <!-- 二级标题 -->
 ## 大雪 
-<!--
-![大雪](/images/blog/snow.jpg)
--->
+<!-- ![大雪](/images/blog/snow.jpg) -->
 <p><img src="/images/blog/snow.jpg" width="410" height="546"><p>
 大雪，十一月节。大者，盛也。至此而雪盛矣。
  <!-- 三级标题 -->

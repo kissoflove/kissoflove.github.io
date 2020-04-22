@@ -78,5 +78,17 @@ theme: spfk
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:kissoflove/kissoflove.github.io.git
+  repo: 
+    #github: git@github.com:kissoflove/kissoflove.github.io.git,master
+    #coding: https://git.dev.tencent.com/kissoflove/kissoflove.coding.me.git,cooperation
+  #branch: master
+
+    github: git@github.com:kissoflove/kissoflove.github.io.git
+    coding: https://git.dev.tencent.com/kissoflove/kissoflove.coding.me.git
   branch: master
+
+#port
+server:
+  port: 4001
+  compress: true
+  header: true
