@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>Mac mini(Late 2012) 输出2K视频 升级系统到10.13（macOS High Sierra） | 麦客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="升级系统，正常输出2K视频">
+<meta name="keywords" content="Mac mini,2K分辨率,系统升级">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac mini(Late 2012) 输出2K视频 升级系统到10.13（macOS High Sierra）">
+<meta property="og:url" content="http://yoursite.com/2018/07/24/Mac mini (Late 2012) 输出2K视频(升级10.13系统) /index.html">
+<meta property="og:site_name" content="麦客">
+<meta property="og:description" content="升级系统，正常输出2K视频">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/blog/安装器.jpg">
+<meta property="og:image" content="http://yoursite.com/images/blog/系统工具.png">
+<meta property="og:image" content="http://yoursite.com/images/blog/Thunderbolt.png">
+<meta property="og:image" content="http://yoursite.com/images/blog/升级系统.png">
+<meta property="og:image" content="http://yoursite.com/images/blog/补丁仓库.png">
+<meta property="og:image" content="http://yoursite.com/images/blog/补丁.png">
+<meta property="og:image" content="http://yoursite.com/images/blog/存储页面.png">
+<meta property="og:image" content="http://yoursite.com/images/blog/存储路径和格式.png">
+<meta property="og:image" content="http://yoursite.com/images/blog/存储提示.png">
+<meta property="og:image" content="http://yoursite.com/images/blog/下载完成.png">
+<meta property="og:image" content="http://yoursite.com/images/blog/SwitchResX-1.png">
+<meta property="og:image" content="http://yoursite.com/images/blog/SwitchResX-2.png">
+<meta property="og:image" content="http://yoursite.com/images/blog/SwitchResX-3.png">
+<meta property="og:updated_time" content="2020-11-05T14:03:49.602Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mac mini(Late 2012) 输出2K视频 升级系统到10.13（macOS High Sierra）">
+<meta name="twitter:description" content="升级系统，正常输出2K视频">
+<meta name="twitter:image" content="http://yoursite.com/images/blog/安装器.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="麦客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/head/favicon.ico">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.ico">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet">
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/images/head/盖聂0.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">羽白</a></h1>
+        </hgroup>
+
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/Home">博客首页</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/2K分辨率/" style="font-size: 10px;">2K分辨率</a> <a href="/tags/Mac-mini/" style="font-size: 10px;">Mac mini</a> <a href="/tags/外语/" style="font-size: 20px;">外语</a> <a href="/tags/学习/" style="font-size: 20px;">学习</a> <a href="/tags/系统升级/" style="font-size: 10px;">系统升级</a> <a href="/tags/英语/" style="font-size: 20px;">英语</a> <a href="/tags/语法/" style="font-size: 10px;">语法</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://luuman.github.io/">name</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">百艺通，无艺精。</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">羽白</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="//images/head/盖聂0.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">羽白</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/Home">博客首页</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="#" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                    
+                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-Mac mini (Late 2012) 输出2K视频(升级10.13系统) " class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/07/24/Mac mini (Late 2012) 输出2K视频(升级10.13系统) /" class="article-date">
+      <time datetime="2018-07-23T16:00:00.000Z" itemprop="datePublished">2018-07-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Mac mini(Late 2012) 输出2K视频 升级系统到10.13（macOS High Sierra）
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/macOS/">macOS</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2K分辨率/">2K分辨率</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac-mini/">Mac mini</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统升级/">系统升级</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <!--文章摘要-->
+<p>升级系统，正常输出2K视频<br><a id="more"></a></p>
+<h1 id="升级系统"><a href="#升级系统" class="headerlink" title="升级系统"></a>升级系统</h1><p>本来不打算升级系统的，毕竟搭建了那么多开发环境，怕给整的不能用了。但是，LG25UM58的2K的宽屏显示器分辨率一直无法调好，试了很多办法都无果，本想着扁就扁吧（图标什么的都被拉长了，看着难受是肯定的），可看到同事都升级了最新系统，就想着升级一下，也许能解决分辨率问题，虽然知道这是主要是显卡和接口的问题。这款LG显示器接口只有两个HDMI，没有VGA和DP，也是够坑的。</p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>硬件：Mac mini(Late 2012)<br>系统：从10.12 (macOS Sierra) 升级到 10.13（macOS High Sierra）</p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>在Appstore里进行免费升级<br>安装器下载完成后开始升级,但出现找不到资源的提示，重启还是一样。</p>
+<p><img src="/images/blog/安装器.jpg" alt="安装器"><br>图1 安装器</p>
+<h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><p>在重启多次无效后，只好恢复到之前的系统：<br>方法1：按alt重启，选择升级前的启动盘（旧系统）而非升级盘（新系统）<br>方法2：按cmd +R重启</p>
+<p><img src="/images/blog/系统工具.png" alt="系统工具"><br>图2 系统工具</p>
+<p>其实，在执行方法1的时候，再升级（直接选择升级盘或进入旧系统后再次打开安装器）一次或多次，往往会升级成功！<br>我的操作则一波三折,先用方法2尝试，结果发现Time Machine没有备份，第二项好像需要下载副本，第三项也是扯淡，想着就用第四项（Disk Utility）恢复磁盘吧。结果发现旧系统盘是灰色的，无法修改。现在想来，应该是格式转换（NTFS-&gt; APFS）还没有完成。于是乎选用方法1，发现找不到旧启动盘，只有升级盘，有点绝望，觉得没救了，打算备份数据，然后借助另一台Mac来恢复或用U盘重装。折腾的太晚了，就先洗洗睡了。<br>第二天从实验室借了另一台Mac mini(Mid 2014) ，顺便接入我的2K显示器试了一下，显示正常。由此可见，应该是我的Mac mini版本太旧，默认分辨率不支持2K。用雷电线（Thunderbolt cable）将我的 Mac mini（按T重启）连接到另一台Mac mini上，我旧启动盘没有直接显示在桌面上（黄色盘标），进入磁盘工具发现旧启动盘依然是灰色，感觉好无奈。</p>
+<p><img src="/images/blog/Thunderbolt.png" alt="Thunderbolt"><br>图3 Thunderbolt cable（mini DP接口）</p>
+<p>只好再试方法2来恢复磁盘，却惊喜地发现旧启动盘已不是灰色了（应该是格式转换完成了），就又连到借来的那台Macmini上备份了数据并准备恢复系统，可转念一想，既然启动盘正常了，那应该在用方法1时可以找到旧启动盘了。果然，再次使用方法1时旧启动盘（10.12）出现了，蛮激动的，不过还是想选择升级盘再升级一次。结果还成了，只是分辨率问题并没得到解决。</p>
+<p><img src="/images/blog/升级系统.png" alt="升级系统"><br>图4 升级系统</p>
+<h1 id="解决分辨率问题"><a href="#解决分辨率问题" class="headerlink" title="解决分辨率问题"></a>解决分辨率问题</h1><h2 id="下载补丁（脚本）"><a href="#下载补丁（脚本）" class="headerlink" title="下载补丁（脚本）"></a>下载补丁（脚本）</h2><h3 id="相关补丁"><a href="#相关补丁" class="headerlink" title="相关补丁"></a>相关补丁</h3><p><a href="https://github.com/Floris497/mac-pixel-clock-patch-V2" target="_blank" rel="noopener">mac-pixel-clock-patch-V2</a><br>选择合适的版本，如：<a href="https://github.com/Floris497/mac-pixel-clock-patch-V2/blob/master/CoreDisplay-patcher.command" target="_blank" rel="noopener">CoreDisplay</a></p>
+<h3 id="获取脚本"><a href="#获取脚本" class="headerlink" title="获取脚本"></a>获取脚本</h3><p>不熟悉GitHub的可以用以下方式获取相应脚本。<br>方法1：<br>点击Clone or download -&gt; Download ZIP</p>
+<p><img src="/images/blog/补丁仓库.png" alt="补丁仓库"><br>图5 补丁仓库</p>
+<p>方法2：<br>点击Raw </p>
+<p><img src="/images/blog/补丁.png" alt="补丁"><br>图6 补丁（脚本）</p>
+<p>查看源码-&gt;在页面右击-&gt;将页面存储为</p>
+<p><img src="/images/blog/存储页面.png" alt="存储页面"><br>图7存储页面</p>
+<p>选择位置、格式（页面源码）-&gt; 存储</p>
+<p><img src="/images/blog/存储路径和格式.png" alt="存储路径和格式"><br>图8 存储路径和格式</p>
+<p>选择“不追加”</p>
+<p><img src="/images/blog/存储提示.png" alt="存储提示"><br>图9 存储提示</p>
+<p>下载完成</p>
+<p><img src="/images/blog/下载完成.png" alt="下载完成"><br>图10 下载完成的补丁（脚本）</p>
+<blockquote>
+<p>注：方法2有点作死，可以忽略。</p>
+</blockquote>
+<h2 id="执行该脚本（在终端里进行）"><a href="#执行该脚本（在终端里进行）" class="headerlink" title="执行该脚本（在终端里进行）"></a>执行该脚本（在终端里进行）</h2><p>1.当系统版本≧10.11时，需要确认系统保护处于关闭（disable）状态<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ csrutil status</span><br></pre></td></tr></table></figure></p>
+<p>2.修改脚本权限<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ chmod +x  /Users/Wade/Documents/CoreDisplay-patcher.command</span><br></pre></td></tr></table></figure></p>
+<p>3.执行</p>
+<pre><code class="bash">$ /Users/Wade/Documents/CoreDisplay-patcher.command
+</code></pre>
+<p>4.设置-&gt;显示器-&gt;按alt+点击“缩放”，查看是否有自己需要的分辨率（如2560*1080）<br>5.如果通过4还是查不到所需分辨率，则安装SwitchResX来设置分辨率<br><a href="https://pan.baidu.com/s/12jdM-EMUJIM8aswNe2VEcw" target="_blank" rel="noopener">SwitchResX</a>，Password：qqdw<br>查看当前可用分辨率，有所需分辨率则直接应用</p>
+<p><img src="/images/blog/SwitchResX-1.png" alt="SwitchResX-1"><br>图11 SwitchResX-1</p>
+<p>没有则添加（+）</p>
+<p><img src="/images/blog/SwitchResX-2.png" alt="SwitchResX-2"><br>图12 SwitchResX-2</p>
+<p>应用（Aplay）</p>
+<p><img src="/images/blog/SwitchResX-3.png" alt="SwitchResX-3"><br>图13 SwitchResX-3</p>
+<p>6.额外功能（具体问题可以在issues中查看）<br>如：</p>
+<pre><code class="bash">$ /Users/Wade/Documents/CoreDisplay-patcher.command patch v4
+</code></pre>
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p>1.HONG, 2017. <a href="http://oohong.com/post/fight-q34" target="_blank" rel="noopener">FIGHT Q34–记升级34寸曲面显示器及MAC MINI MID 2011(MC815)折腾</a><br>2.ryan2000, 2017. <a href="https://bbs.feng.com/forum.php?mod=viewthread&amp;tid=11455162&amp;extra=&amp;page=1" target="_blank" rel="noopener">[求助－已解决] MacOS 10.13升级失败！</a><br>3.artoostark, mcluyu, 2018. <a href="http://jp.v2ex.com/t/446463" target="_blank" rel="noopener">升级 macOS High Sierra 出错，然后我救回来了</a><br>4.方水泉, 2017. <a href="http://baijiahao.baidu.com/s?id=1580123441382649040&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">macOS High Sierra升级注意事项和一些故障的解决办法</a><br>5.竹山流水, 2017. <a href="https://jingyan.baidu.com/article/9c69d48ff88b3813c9024e9d.html" target="_blank" rel="noopener">Mac SIP系统完整性保护如何关闭启动启用教程</a></p>
+
+      
+      
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>赏瓶汽水</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/07/24/Mac mini (Late 2012) 输出2K视频(升级10.13系统) /">Mac mini(Late 2012) 输出2K视频 升级系统到10.13（macOS High Sierra）</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 羽白 的个人博客">羽白</a></p>
+        <p><span>发布时间:</span>2018年07月24日 - 00时00分</p>
+        <p><span>最后更新:</span>2020年11月05日 - 22时03分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/07/24/Mac mini (Late 2012) 输出2K视频(升级10.13系统) /" title="Mac mini(Late 2012) 输出2K视频 升级系统到10.13（macOS High Sierra）">http://yoursite.com/2018/07/24/Mac mini (Late 2012) 输出2K视频(升级10.13系统) /</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/07/24/Mac mini (Late 2012) 输出2K视频(升级10.13系统) /　　作者: 羽白" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2020/11/05/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/12/27/英语常用句型语法宝典-3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">英语常用句型语法宝典-3</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#升级系统"><span class="toc-number">1.</span> <span class="toc-text">升级系统</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境"><span class="toc-number">1.1.</span> <span class="toc-text">环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法"><span class="toc-number">1.2.</span> <span class="toc-text">方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决问题"><span class="toc-number">1.3.</span> <span class="toc-text">解决问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解决分辨率问题"><span class="toc-number">2.</span> <span class="toc-text">解决分辨率问题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载补丁（脚本）"><span class="toc-number">2.1.</span> <span class="toc-text">下载补丁（脚本）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#相关补丁"><span class="toc-number">2.1.1.</span> <span class="toc-text">相关补丁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取脚本"><span class="toc-number">2.1.2.</span> <span class="toc-text">获取脚本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#执行该脚本（在终端里进行）"><span class="toc-number">2.2.</span> <span class="toc-text">执行该脚本（在终端里进行）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考文献"><span class="toc-number">3.</span> <span class="toc-text">参考文献</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'luuman',
+      repo: 'luuman.github.io',
+      oauth: {
+        client_id: '',
+        client_secret: '',
+      },
+    })
+    gitment.render('gitments')
+</script>
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2020/11/05/hello-world/" title="上一篇: Hello World">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/12/27/英语常用句型语法宝典-3/" title="下一篇: 英语常用句型语法宝典-3">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/11/05/Mac下通过云服务科学上网/">Mac下通过云服务科学上网</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/11/05/课本里的古诗/">课本里的古诗</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/11/05/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/24/Mac mini (Late 2012) 输出2K视频(升级10.13系统) /">Mac mini(Late 2012) 输出2K视频 升级系统到10.13（macOS High Sierra）</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/27/英语常用句型语法宝典-3/">英语常用句型语法宝典-3</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/22/英语常用句型语法宝典-2/">英语常用句型语法宝典-2</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/08/英语常用句型语法宝典/">英语常用句型语法宝典</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2020 羽白
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >本站到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 5;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
