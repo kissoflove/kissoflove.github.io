@@ -84,7 +84,7 @@ deploy:
   #branch: master
 
     github: git@github.com:kissoflove/kissoflove.github.io.git
-    coding: https://git.dev.tencent.com/kissoflove/kissoflove.coding.me.git
+    # coding: https://git.dev.tencent.com/kissoflove/kissoflove.coding.me.git
   branch: master
 
 #port
