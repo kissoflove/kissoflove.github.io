@@ -1,35 +1,39 @@
 ---
 title: Mac下通过云服务科学上网
+date: 2020-11-6
+tags: [Mac,谷歌云,科学上网]
+categories: macOS
 ---
+<!--文章摘要-->
 用某歌云服务搭建自己的云服务平台
+<!-- more -->
 
-## 1.申请某歌云服务
-- 申请条件  
-拥有双币信用卡（Master/VISA等） 
-可以访问外网的环境（先用下别人的梯子）
+# 申请某歌云服务
+- 申请条件
+  - 拥有双币信用卡（Master/VISA等）   
+  - 可以访问外网的环境（先用下别人的梯子）
 
-- 2 开始注册  
-[谷歌云](https://cloud.google.com)
+- 开始注册
+  - [谷歌云](https://cloud.google.com)
 
-- 参考  
-[免费|申请谷歌云服务器](https://zhuanlan.zhihu.com/p/60993816)  
-[免费申请谷歌云账号](https://zhuanlan.zhihu.com/p/96026350)
+- 参考
+  - [免费|申请谷歌云服务器](https://zhuanlan.zhihu.com/p/60993816)  
+  - [免费申请谷歌云账号](https://zhuanlan.zhihu.com/p/96026350)
 
-- 注册成功  
-![注册成功](/images/blog/ggc/001.png)
-<!-- <p><img src="/images/blog/ggc/001.png" width="300" height="200"><p> -->
+- 注册成功
+  - ![注册成功](/images/blog/ggc/001.png)
 
-## 2.VPC网络
-- 配置防火墙规则
+# VPC网络
+- 配置防火墙规则  
 - 创建静态IP  
   > 可以参考“1.申请某歌云服务”中的链接
 
-## 3.VPC网络计算引擎(compute engine)
+# VPC网络计算引擎(compute engine)
 - 创建基于静态IP的VM实例
   > 可以参考“1.申请某歌云服务”中的链接
 
-## 4.SSH登录
-- 网页登录(自带)  
+# SSH登录
+- 网页登录(自带)    
 - 本地登录  
   - 环境：Mac终端自带ssh
   - 生成ssh秘钥（网上可查如何生成，如果是常用git的人，用之前生成的ssh秘钥就行），上传到计算引擎(compute engine)
@@ -47,7 +51,7 @@ title: Mac下通过云服务科学上网
       # ssh 所添加秘钥的用户名@VM的外部IP
       ssh Kobe@35.124.13.20
       ```
-## 5.在VM安装V2Ray
+# 在VM安装V2Ray
 - 在网页或终端进入VM都行，然后输入：  
 ``` bash 
 # 先进入root
@@ -59,7 +63,7 @@ bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/
 ```
 - 安装完成  
   ![安装](/images/blog/ggc/006.png)
-- 查看配置  
+- 查看配置
 ``` bash 
 cat /usr/local/etc/v2ray/config.json
 ```
@@ -106,7 +110,7 @@ vi /usr/local/etc/v2ray/config.json
 1.[fhs-install-v2ray](https://github.com/v2fly/fhs-install-v2ray)  
 2.[V2Ray服务端安装和配置](https://www.lazylr.com/lazyl-jc/120.html)
 
-## 6.使用V2Ray客户端（Mac版）
+# 使用V2Ray客户端（Mac版）
 - 配置
   - 前面配置的VM IP（外部）  
     ![进入](/images/blog/ggc/008.png)
@@ -116,5 +120,5 @@ vi /usr/local/etc/v2ray/config.json
   - 开启(On)
   - 模式一般选 “Pac Mode”
 
-## 7.登录某歌
+# 登录某歌
   ![google](/images/blog/ggc/010.png) 
